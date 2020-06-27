@@ -1,0 +1,28 @@
+{
+  "name": "node-as-a-service",
+  "version": "1.0.0",
+  "description": "Script por linha de comando instala/desinstala uma aplicação NODE.js como serviço nativo do windows",
+  "main": "./src/_node-as-a-service.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "minimist": "^1.2.5",
+    "node-windows": "^1.0.0-beta.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1"
+  },
+  "scripts": {
+    "on": "cls && node ./src/_node-as-a-service.js --on",
+    "off": "cls && node ./src/_node-as-a-service.js --off"
+  },
+  "keywords": [
+    "node",
+    "windows",
+    "service",
+    "javascript",
+    "js",
+    "server"
+  ],
+  "author": "Michel Guimarães Ariede"
+}
