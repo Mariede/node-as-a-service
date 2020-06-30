@@ -2,9 +2,11 @@
 
 // -------------------------------------------------------------------------
 // Modulos de inicializacao
-const config = require('./config');
 const parseArgs = require('minimist');
 const Service = require('node-windows').Service;
+
+// Arquivo config
+const config = require('./service-config');
 
 // Constantes globais
 const sOn = 'on';
@@ -84,7 +86,7 @@ const _servicoOnOff = param => {
 const executeAction = () => {
 	const args = parseArgs(process.argv);
 	const lenArgs = (typeof args === 'object' ? Object.keys(args).length : 0);
-	const errMsg = 'Use one of the arguments:\n   --on  : to install a Windows service associated with the Node project (see config file)\n   --off : to uninstall a Windows service associated with the Node project (see config file)\n\nExample: node ./src/_node-as-a-service --on\n';
+	const errMsg = 'Use one of the arguments:\n   --on  : to install a Windows service associated with the Node project (see service-config file)\n   --off : to uninstall a Windows service associated with the Node project (see service-config file)\n\nExample: node ./src/_node-as-a-service --on\n';
 
 	if (lenArgs === 2) {
 		if (args.on || args.off) {

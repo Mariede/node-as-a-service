@@ -7,12 +7,12 @@ Script por linha de comando instala/desinstala uma aplicação NODE.js como serv
 npm install
 ```
 
-Instala um novo serviço no windows com base no arquivo de configuração **config.js**
+Instala um novo serviço no windows com base no arquivo de configuração **service-config.js**
 ```
 npm run on
 ```
 
-Desinstala um serviço existente no windows com base no arquivo de configuração **config.js**
+Desinstala um serviço existente no windows com base no arquivo de configuração **service-config.js**
 ```
 npm run off
 ```
