@@ -5,12 +5,16 @@
   "main": "./src/_node-as-a-service.js",
   "license": "MIT",
   "private": true,
+  "engines": {
+    "node": ">=10.5.0"
+  },
   "dependencies": {
     "minimist": "^1.2.5",
     "node-windows": "^1.0.0-beta.1"
   },
   "devDependencies": {
-    "eslint": "^7.4.0"
+    "eslint": "^7.5.0",
+    "eslint-plugin-node": "^11.1.0"
   },
   "scripts": {
     "on": "cls && node ./src/_node-as-a-service.js --on",
