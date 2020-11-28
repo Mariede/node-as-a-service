@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Script por linha de comando instala/desinstala uma aplicação NODE.js como serviço nativo do windows",
   "main": "./src/_node-as-a-service.js",
+  "type": "commonjs",
   "license": "MIT",
   "private": true,
   "engines": {
@@ -13,7 +14,7 @@
     "node-windows": "^1.0.0-beta.1"
   },
   "devDependencies": {
-    "eslint": "^7.5.0",
+    "eslint": "^7.14.0",
     "eslint-plugin-node": "^11.1.0"
   },
   "scripts": {
